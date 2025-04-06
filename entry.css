@@ -1,0 +1,53 @@
+/* entry.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f0fff0, #e0ffe0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .entry-container {
+    text-align: center;
+  }
+  
+  .entry-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  .entry-box h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .entry-box span {
+    color: #4CAF50;
+  }
+  
+  .tagline {
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .enter-btn {
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .enter-btn:hover {
+    background-color: #388e3c;
+  }
+  

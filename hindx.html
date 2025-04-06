@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glucose Guardian - Sugar Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="icon" href="icon.png"> <!-- Keep only one favicon link -->
+
+  <link rel="stylesheet" href="des.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Glucose Guardian</h1>
+      <p class="subtitle">Track your daily sugar intake</p>
+    </header>
+
+    <div class="main-content">
+      <div class="input-group">
+        <input type="text" id="foodInput" placeholder="What did you eat? (e.g., apple, donut)" autofocus />
+        <button id="addBtn">Add</button>
+      </div>
+
+      <div id="foodLog" class="food-log">
+        <h3>You entered:</h3>
+        <p id="foodText" class="food-text"></p>
+        <p>Contains <span id="sugarAmount" class="sugar-amount">0g</span> of sugar</p>
+      </div>
+
+      <div class="progress-container">
+        <div class="progress-header">
+          <span>Today's Sugar Intake</span>
+          <span id="sugarTotal">0g</span>
+        </div>
+        <div class="progress-bar">
+          <div id="progressFill" class="progress-fill" style="width: 0%"></div>
+        </div>
+        <p id="progressWarning" class="progress-warning"></p>
+      </div>
+
+      <div class="history">
+        <h2>Recent Items</h2>
+        <div id="historyList"></div>
+      </div>
+    </div>
+
+    <div class="limit-section">
+      <label for="sugarLimitInput">Enter your daily sugar limit (g):</label>
+      <input type="number" id="sugarLimitInput" placeholder="e.g., 25" />
+      <button id="setLimitBtn">Set Limit</button>
+    </div>
+
+    <footer>
+      <p>Glucose Guardian - Hackathon Project</p>
+    </footer>
+  </div>
+
+  <script src="workin.js"></script> <!-- Ensure 'workin.js' is in the correct path -->
+</body>
+</html>
